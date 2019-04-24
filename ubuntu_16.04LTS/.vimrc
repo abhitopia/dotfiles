@@ -17,13 +17,13 @@ Plugin 'gmarik/Vundle.vim'
 " Enable smart folding
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
+" Bundle 'Valloric/YouCompleteMe'
+" Plugin 'vim-syntastic/syntastic'
+" Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
-
+Plugin 'davidhalter/jedi-vim'
 " ...
 
 " All of your Plugins must be added before the following line
@@ -73,8 +73,8 @@ set encoding=utf-8
 
 
 " YouCompleteMe config
-let g:ycm_autoclose_preview_window_after_completion=1 " Ensures the autocomplete goes away when you're done with it
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR> " shortcut for goto definition
+" let g:ycm_autoclose_preview_window_after_completion=1 " Ensures the autocomplete goes away when you're done with it
+" map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR> " shortcut for goto definition
 
 
 " python with virtualenv support
@@ -99,8 +99,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 " uses system clipboard for copy and paste
 set clipboard=unnamedplus
 
-" This requires xclip to be installed on both local and server.
-" Further enable `X11Forwarding yes` in /etc/ssg/sshd_config
-vmap "+y :!xclip -f -sel clip
-map "+p :r!xclip -o -sel clip
+" Shortcut for NerdTree
+map <C-n> :NERDTreeToggle<CR>
 
