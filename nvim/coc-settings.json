@@ -1,0 +1,17 @@
+{
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": " ",
+    "diagnostic.hintSign": "",
+    "python.linting.pylintUseMinimalCheckers": true,
+    "python.formatting.provider": "yapf",
+    "python.jediEnabled": true,
+    "coc.preferences.hoverTarget": "float",
+	"diagnostic.messageTarget": "float",
+  	"signature.target": "float",
+    "python.linting.flake8Enabled": true,
+    "python.autoComplete.addBrackets": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.trace.server": "messages"
+}
